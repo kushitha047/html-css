@@ -1,0 +1,91 @@
+youtube page
+html code:
+***
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="yout.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="page">
+        <img src="https://www.planetware.com/wpimages/2020/06/india-goa-top-attractions-popular-beaches.jpg" class="size">
+        <h1>About</h1>
+        <p class="cont">
+            Goa is a state in western India with coastlines stretching along the Arabian Sea.
+            Its long history as a Portuguese colony prior to 1961 is evident in its preserved
+            17th-century churches and the area’s tropical spice plantations. Goa is also known
+            for its beaches, ranging from popular stretches at Baga and Palolem to those in
+            laid-back fishing villages such as Agonda.
+        </p>
+        <h1>More Pictures</h1>
+        <div class="sizes">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ8KU_Mt5l1pp2il84g7j9SRdjjhY5edvGrw&" class="float-start" alt="pic1">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV0ZgWGXIJ9pDFtQg7EqV4w91-noPEp1DY5A&s" class="mx-auto d-block" alt="pic2">
+            <img src="https://www.shutterstock.com/image-illustration/realistic-3d-map-qatar-260nw-405814870.jpg" class="float-end" alt="pic3">
+        </div>
+        <h1>Videos</h1>
+        <div class="video">
+            <iframe src="https://www.youtube.com/embed/kDckChh7y08" title="YouTube video1" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/TLfaudC3zPU" title="YouTube video2" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/3Dl3jHPeNA8" title="YouTube video3" allowfullscreen></iframe>
+        </div>
+    </div>
+</body>
+</html>
+***
+css code:
+***
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.page {
+    max-width: 700px;
+    margin: auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+h1 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+.cont {
+    text-align: justify;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.sizes{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: nowrap;
+}
+.sizes img {
+    width: 30%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+.video iframe {
+    width: 230px;
+    height: 200px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 10px;
+}
+.sizes, .video {
+    padding: 10px 0;
+}
+
+
+***
